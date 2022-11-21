@@ -12,14 +12,16 @@ public class Storing_Data {
             System.out.println("My file is located at "+ myFile.getAbsolutePath());
 
             try {
-                FileWriter myWriter = new FileWriter(myFile);
-                myWriter.write("This is my first file");
-                myWriter.close();
+                    FileWriter myWriter = new FileWriter(myFile, true);
+                    myWriter.write("This is my second file");
+                    myWriter.close();
             }
             catch(IOException e)
             {
                 e.printStackTrace();
             }
+
+            //Writer(Object lock)
 
 
 
